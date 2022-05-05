@@ -61,7 +61,7 @@ crazyDiff(21)
  It should add the word "Strive" in front of the given string, but if the given string already begins with "Strive", then it should just return the original string.
 */
 
-console.log("\n***Excercise 3***\n")
+console.log("\n***Excercise 5***\n")
 let strivify = function(string){
     if (string.slice(0,5) === "strive"){
         console.log(string)
@@ -77,13 +77,32 @@ strivify("strivesamreen")
  HINT: Modulus Operator
 */
 
-/* WRITE YOUR ANSWER HERE */
+console.log("\n***Excercise 6***\n")
+let check3and7 = function(x){
+    if (x % 3 === 0 && x % 7 === 0){
+        console.log("The number is multiple of 3 and 7")
+        }
+    else if (x % 3 === 0){
+    console.log("The number is multiple of 3")
+    }
+    else if(x % 7 === 0){
+        console.log("The number is multiple of 7")
+    }
+    else{
+        console.log("The number is neither a multiple of 3 nor of 7")
+    }
+}
+check3and7(5)
 
 /* EXERCISE 7
  Write a function called "reverseString" which programmatically reverses a given string (es.: Strive => evirtS).
 */
 
-/* WRITE YOUR ANSWER HERE */
+console.log("\n***Excercise 7***\n")
+let reverseString = function(string){
+    console.log(string.split("").reverse().join(""))
+}
+reverseString("strive")
 
 /* EXERCISE 8
  Write a function called "upperFirst" which capitalizes the first letter of each word of a given string passed as a parameter.
