@@ -14,7 +14,7 @@ ASSIGNMENT RULES
 
 console.log("\n***Excercise 1***\n")
 let area = function(l1, l2){
-    console.log("the area of traingle is:", (l1*l2)/2)
+    console.log("the area of rectangle is:", (l1*l2))
 }
 area(2, 4)
 
@@ -63,7 +63,7 @@ crazyDiff(21)
 
 console.log("\n***Excercise 5***\n")
 let strivify = function(string){
-    if (string.slice(0,5) === "strive"){
+    if (string.startsWith("strive")){
         console.log(string)
     }
     else{
@@ -108,7 +108,17 @@ reverseString("strive")
  Write a function called "upperFirst" which capitalizes the first letter of each word of a given string passed as a parameter.
 */
 
-/* WRITE YOUR ANSWER HERE */
+let upperFirst = function(str){
+    let strng = str.split("");
+    
+    /*for(let i = 0; i < strng.lenght; i++){
+        strng[i] = strng[i].charAt(0).toUpperCase() + strng[i]+slice(1);
+    }
+    let str2 = strng.join("");
+    console.log(str2)*/
+}
+
+upperFirst("i am loving practicing java script")
 
 /* EXERCISE 9
  Write a function called "cutString" which creates a new string without the first and last character of a given string passed as a parameter.
