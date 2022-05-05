@@ -12,21 +12,43 @@ ASSIGNMENT RULES
  Write a function called "area" which receives 2 parameters (l1, l2) and calculates the area of the associated rectangle.
 */
 
-/* WRITE YOUR ANSWER HERE */
+console.log("\n***Excercise 1***\n")
+let area = function(l1, l2){
+    console.log("the area of traingle is:", (l1*l2)/2)
+}
+area(2, 4)
 
 /* EXERCISE 2
  Write a function called "crazySum" which receives two integers as parameters.
  It should return the sum of those two values, but if the two values are the same then it should return their sum multiplied by 3.
 */
 
-/* WRITE YOUR ANSWER HERE */
+console.log("\n***Excercise 2***\n")
+let crazySum = function(x, y){
+    if (x != y){
+        console.log("The sum og the values is:", x+y);
+    }
+    else{
+        console.log("the sum of the values is:", (x+y)*3)
+    }
+}
+crazySum(7, 7)
 
 /* EXERCISE 3
  Write a function called "crazyDiff" that computes the absolute difference between a given number and 19.
  It should return triple their absolute difference if the given number is greater than 19.
 */
 
-/* WRITE YOUR ANSWER HERE */
+console.log("\n***Excercise 3***\n")
+let crazyDiff = function(a){
+    if(a<=19){
+        console.log("the difference is:", 19 - a);
+    }
+    else{
+        console.log("the difference is:", (a - 19)*3);
+    }
+}
+crazyDiff(21)
 
 /* EXERCISE 4
  Write a function called "boundary" which accept an integer parameter n and returns true if n is within 20 and 100 (included) or if n it's equal to 400.
@@ -39,7 +61,16 @@ ASSIGNMENT RULES
  It should add the word "Strive" in front of the given string, but if the given string already begins with "Strive", then it should just return the original string.
 */
 
-/* WRITE YOUR ANSWER HERE */
+console.log("\n***Excercise 3***\n")
+let strivify = function(string){
+    if (string.slice(0,5) === "strive"){
+        console.log(string)
+    }
+    else{
+        console.log("strive"+string)
+    }
+}
+strivify("strivesamreen")
 
 /* EXERCISE 6
  Write a function called "check3and7" which accepts a positive number as a parameter and checks if it is a multiple of 3 or a multiple of 7.
